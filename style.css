@@ -127,7 +127,48 @@ img {
   }
 }
 
-/* Regole per responsive 420px < x < 768px */
-@media screen and (min-width: 420px) and (max-width: 767px) {
-  
+/* Regole per responsive 420px < x < 810px (il valore 810 l'ho inserito perchè è il valore di un ipad) */
+@media screen and (min-width: 420px) and (max-width: 600px) {
+  .row {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+  }
+
+  #lezioni .row>.left,
+  #lezioni .row>.right {
+    width: 100%;
+    float: none;
+  }
+
+  #steps .row>.left,
+  #steps .row>.central,
+  #steps .row>.right {
+    float: none;
+    width: 100%;
+  }
+
+}
+
+@media screen and (min-width: 601px) and (max-width: 810px) {
+  .row {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+  }
+
+  #steps .row>.left,
+  #steps .row>.central,
+  #steps .row>.right {
+    float: left;
+    width: calc(33% - 40px);
+    padding: 20px;
+  }
+
+  #steps img {
+    width: 150px;
+    height: 150px;
+  }
 }
